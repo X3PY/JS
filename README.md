@@ -1,10 +1,10 @@
 Promise
 =========
-##Promise란
+## Promise란
 Promise는 자바스크립트 비동기처리에 사용되는 객체이다. '비동기처리'란 '특정 코드의 실행이 완료될 때까지 기다리지 않고 다음 코드를 먼저 수행하는 자바스크립트의 특성'이다.
 Promise 는 주로 서버에서 받아온 데이터를 화면에 표시할 때 사용한다.
 
-###Promise의 3가지 상태
+### Promise의 3가지 상태
 
 1. Pending(대기) : 비동기 처리 로직이 아직 완료되지 않은 상태 
 ```js
@@ -27,15 +27,15 @@ new Promise(function (resolve, reject) {
 `new Promise()` 로 프로미스 객체를 생성하면 콜백 함수 인자로 resolve와 reject를 사용할 수 있다.
 여기서 reject 인자로 reject() 메서드를 실행하면 Rejected 상태가 된다.
 
-##자바스크립트의 변수 const, let, var 
+## 자바스크립트의 변수 const, let, var 
 
-###var, let ,const의 차이점
+### var, let ,const의 차이점
 
 1.var은 function-scoped이고 let, cosnt는 block-scoped이다.
 2.function-scoped인 var은 하나의 함수 내에서만 적용 범위가 유효하다.
 3.blocked-scoped인 let과 const는 { }로 감싸고 있는 범위 내에서 유효하다. 
 
-###let과 const의 차이는 무엇인가. 
+### let과 const의 차이는 무엇인가. 
 const는 Primitive type인 string, number, boolean, null, undefined의 상수 선언에 사용된다.
 상수이기 떄문에 한번 선언하고 다시 선언 할 경우에는 에러가 발생한다. let은 변수 선언에 사용된다.
 const의 경우에 상수로 선언한 객체변수의 property까지 상수 선언이 되어서 property까지 변하지 않는것은 아니다. 
@@ -73,7 +73,7 @@ singleParam => { statements }
 ```js
 () => { statements }
 ```
-##Array Methods (map, reduce, filter, slice, splice)
+## Array Methods (map, reduce, filter, slice, splice)
 
 ### map 
 ```js
@@ -89,7 +89,7 @@ callback(currentValue[, index[, array]]) { // new_array
 
 -thisArg 매개변수가 map에 전달된 경우 callback 함수의 this 값으로 사용된다.
 
-###reduce 
+### reduce 
 
 reduce 메서드의 구문
 ```js
@@ -100,7 +100,7 @@ array1.reduce(callbackfn[, initialValue])
 -intialValue = 선택사항으로 initialValue가 지정된 경우 누적을 시작하는 초기 값으로 사용된다.  callbackfn함수에 대한 첫 번째 호출은 이 값을 배열 값 대신 인수로 제공한다. 
 -이 구문에 대한 반환값은 콜백함수에 대한 마지막 호출로부터 누적된 결과이다.
 
-###filter 
+### filter 
 filter 메서드는 map 과 마찬가지로 첫 번째 인자로 
 콜백 함수(콜백 함수의 첫 번째 인자는 순회하는 배열의 값(value), 두 번째 인자는 그 값의 인덱스(index), 세 번째 인자는 배열 자체(array)이다)를 받는데 이 콜백함수의 return 값은 Boolean, 즉 true 혹은 false 가 되어야 한다. 그리고 그 return 값이 true 일 경우, 그 배열의 값은 최종적으로 return 되는 배열에 포함되고 false 일 경우에는 제외된다.
 
@@ -144,7 +144,7 @@ array.splice(start, deleteCount[, item1[, item2[, ...]]])
 -deleteCount: 배열에서 제거를 할 요소의 수
 -itemN: 배열에 추가될 요소, 리턴 값: 삭제된 요소들의 배열이 리턴
 
-##Spread Operator (전개연산자)
+## Spread Operator (전개연산자)
 -Iterable Object를 하나씩 전개한다.
 -`[...iterable_object]`
 -iterable object 앞에 ...를 붙여서 선언한다.
